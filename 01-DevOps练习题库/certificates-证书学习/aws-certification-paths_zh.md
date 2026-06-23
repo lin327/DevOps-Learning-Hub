@@ -1,0 +1,23 @@
+# aws-certification-paths 中文说明
+
+本文档为 `aws-certification-paths.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `aws-certification-paths.md`
+- 所在目录: `certificates-证书学习`
+- 中文描述: 证书学习
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./aws-certification-paths.md)

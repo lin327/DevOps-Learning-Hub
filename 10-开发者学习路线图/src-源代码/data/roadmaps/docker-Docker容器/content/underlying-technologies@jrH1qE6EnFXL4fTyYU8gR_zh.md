@@ -1,0 +1,22 @@
+# underlying-technologies@jrH1qE6EnFXL4fTyYU8gR 中文说明
+
+本文档为 `underlying-technologies@jrH1qE6EnFXL4fTyYU8gR.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `underlying-technologies@jrH1qE6EnFXL4fTyYU8gR.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./underlying-technologies@jrH1qE6EnFXL4fTyYU8gR.md)

@@ -1,0 +1,22 @@
+# sizing@78RsPhsWpl00AbkwKXUxL 中文说明
+
+本文档为 `sizing@78RsPhsWpl00AbkwKXUxL.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `sizing@78RsPhsWpl00AbkwKXUxL.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./sizing@78RsPhsWpl00AbkwKXUxL.md)

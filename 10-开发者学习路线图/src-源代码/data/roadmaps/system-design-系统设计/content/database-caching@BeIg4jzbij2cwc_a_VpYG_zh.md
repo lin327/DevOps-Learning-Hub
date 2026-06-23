@@ -1,0 +1,22 @@
+# database-caching@BeIg4jzbij2cwc_a_VpYG 中文说明
+
+本文档为 `database-caching@BeIg4jzbij2cwc_a_VpYG.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `database-caching@BeIg4jzbij2cwc_a_VpYG.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./database-caching@BeIg4jzbij2cwc_a_VpYG.md)

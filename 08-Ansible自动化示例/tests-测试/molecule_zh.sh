@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# 中文注释版本: molecule.sh
+# 所在目录: tests-测试
+
+#!/bin/bash
+#
+# Molecule playbook tests.
+set -e
+
+# Install dependencies.
+pip3 install ansible molecule molecule-plugins[docker] ansible-lint yamllint docker
+
+cd molecule
+
+# Run default test (Rocky Linux).
+molecule test
+
+# Run tests on Debian.
+MOLECULE_DISTRO=debian10 molecule test

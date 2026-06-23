@@ -1,0 +1,48 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+中文注释版本
+原始文件: s3-lambda.py
+所在目录: s3-lambda
+说明: 本文件为 s3-lambda.py 的中文注释版本
+"""
+
+# ? 原始文件内容
+import boto3
+import json
+
+
+def lambda_handler(event, context):
+    # i want to know that event thing
+    print(event)
+
+    # extract relevant information from the s3 event trigger
+    bucket_name = event['Records'][0]['s3']['bucket']['name']
+    object_key = event['Records'][0]['s3']['object']['key']
+
+    # perform desired operations with the uploaded file
+    print(f"File '{object_key}' was uploaded to bucket '{bucket_name}'")
+
+    # example: send a notification via SNS
+    sns_client = boto3.client('sns')
+    topic_arn = 'arn:aws:sns:us-east-1:<account-id>:s3-lambda-sns'
+    sns_client.publish(
+        TopicArn=topic_arn,
+        Subject='s3 object created !!',
+        Message=f"File '{object_key}' was uploaded to bucket '{bucket_name}'"
+    )
+
+    # Example: Trigger another Lambda function
+    # lambda_client = boto3.client('lambda')
+    # target_function_name = 'my-another-lambda-function'
+    # lambda_client.invoke(
+    #     FunctionName=target_function_name,
+    #     InvocationType='Event',
+    #     Payload=json.dumps({'bucket_name': bucket_name, 'object_key': object_key})
+    # )
+    # in case of queuing and other objectives similar to the Netflix flow of triggering
+
+    return {
+        'statusCode': 200,
+        'body': json.dumps("Lambda function executed successfully !!")
+    }

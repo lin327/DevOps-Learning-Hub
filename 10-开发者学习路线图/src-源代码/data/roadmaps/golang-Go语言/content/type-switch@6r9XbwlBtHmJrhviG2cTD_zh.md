@@ -1,0 +1,22 @@
+# type-switch@6r9XbwlBtHmJrhviG2cTD 中文说明
+
+本文档为 `type-switch@6r9XbwlBtHmJrhviG2cTD.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `type-switch@6r9XbwlBtHmJrhviG2cTD.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./type-switch@6r9XbwlBtHmJrhviG2cTD.md)

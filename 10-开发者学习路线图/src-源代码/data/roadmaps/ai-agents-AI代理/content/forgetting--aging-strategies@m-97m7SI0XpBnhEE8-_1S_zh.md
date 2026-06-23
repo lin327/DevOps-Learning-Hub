@@ -1,0 +1,22 @@
+# forgetting--aging-strategies@m-97m7SI0XpBnhEE8-_1S 中文说明
+
+本文档为 `forgetting--aging-strategies@m-97m7SI0XpBnhEE8-_1S.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `forgetting--aging-strategies@m-97m7SI0XpBnhEE8-_1S.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./forgetting--aging-strategies@m-97m7SI0XpBnhEE8-_1S.md)

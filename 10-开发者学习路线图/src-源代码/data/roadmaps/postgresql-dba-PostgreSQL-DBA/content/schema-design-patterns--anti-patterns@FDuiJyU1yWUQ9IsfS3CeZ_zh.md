@@ -1,0 +1,22 @@
+# schema-design-patterns--anti-patterns@FDuiJyU1yWUQ9IsfS3CeZ 中文说明
+
+本文档为 `schema-design-patterns--anti-patterns@FDuiJyU1yWUQ9IsfS3CeZ.md` 的中文版本。
+
+---
+
+## 📄 **文档说明**
+
+- 原始文件: `schema-design-patterns--anti-patterns@FDuiJyU1yWUQ9IsfS3CeZ.md`
+- 所在目录: `content`
+
+---
+
+## 📝 **内容概要**
+
+请参考原始英文文档了解详细内容。
+
+---
+
+## 🔗 **相关链接**
+
+- [原始文档](./schema-design-patterns--anti-patterns@FDuiJyU1yWUQ9IsfS3CeZ.md)
