@@ -76,10 +76,17 @@ cd DevOps-Learning-Hub
 
 ```mermaid
 graph TD
+    %% ========== 第1层：起始层 ==========
     A([🚀 开始 DevOps 学习之旅]) --> B{📌 选择学习方向}
     
-    %% 面试准备分支
+    %% ========== 第2层：方向选择层 ==========
     B -->|面试准备| C[📝 01-DevOps练习题库]
+    B -->|技能提升| D[🗺️ 10-开发者学习路线图]
+    B -->|动手实践| E[🛠️ 04-K8s手动部署教程]
+    B -->|自动化运维| F[📜 03-DevOps脚本工具集]
+    
+    %% ========== 第3层：主题分类层 ==========
+    %% 面试准备 - 主题
     C --> C1[🔧 Linux 基础]
     C --> C2[🐳 Docker 容器]
     C --> C3[☸️ Kubernetes]
@@ -87,129 +94,146 @@ graph TD
     C --> C5[🌐 网络基础]
     C --> C6[🔒 安全基础]
     
-    C1 --> C1a[文件系统管理]
-    C1 --> C1b[用户权限管理]
-    C1 --> C1c[进程管理]
-    C1 --> C1d[Shell 脚本编程]
-    
-    C2 --> C2a[镜像构建]
-    C2 --> C2b[容器运行]
-    C2 --> C2c[网络配置]
-    C2 --> C2d[存储卷管理]
-    
-    C3 --> C3a[Pod 管理]
-    C3 --> C3b[Service 暴露]
-    C3 --> C3c[Deployment 部署]
-    C3 --> C3d[Helm 包管理]
-    
-    C4 --> C4a[EC2 实例]
-    C4 --> C4b[S3 存储]
-    C4 --> C4c[VPC 网络]
-    C4 --> C4d[IAM 权限]
-    
-    C5 --> C5a[TCP/IP 协议]
-    C5 --> C5b[DNS 解析]
-    C5 --> C5c[负载均衡]
-    C5 --> C5d[防火墙配置]
-    
-    C6 --> C6a[SSH 密钥管理]
-    C6 --> C6b[SSL/TLS 证书]
-    C6 --> C6c[安全组配置]
-    C6 --> C6d[密钥管理服务]
-    
-    %% 技能提升分支
-    B -->|技能提升| D[🗺️ 10-开发者学习路线图]
+    %% 技能提升 - 方向
     D --> D1[🎨 前端开发]
     D --> D2[⚙️ 后端开发]
     D --> D3[🔧 DevOps]
     D --> D4[🤖 AI/ML]
     D --> D5[📱 移动开发]
     
+    %% 动手实践 - 阶段
+    E --> E1[📋 环境准备]
+    E --> E2[🔐 证书生成]
+    E --> E3[📦 etcd 部署]
+    E --> E4[🎛️ 控制平面部署]
+    E --> E5[💻 Worker 节点部署]
+    E --> E6[🧪 集群验证]
+    
+    %% 自动化运维 - 类别
+    F --> F1[☁️ 云平台脚本]
+    F --> F2[🔄 CI/CD 脚本]
+    F --> F3[🐳 Docker 脚本]
+    F --> F4[☸️ Kubernetes 脚本]
+    F --> F5[📊 监控脚本]
+    
+    %% ========== 第4层：具体技术层 ==========
+    %% Linux 细分
+    C1 --> C1a[文件系统管理]
+    C1 --> C1b[用户权限管理]
+    C1 --> C1c[进程管理]
+    C1 --> C1d[Shell 脚本编程]
+    
+    %% Docker 细分
+    C2 --> C2a[镜像构建]
+    C2 --> C2b[容器运行]
+    C2 --> C2c[网络配置]
+    C2 --> C2d[存储卷管理]
+    
+    %% Kubernetes 细分
+    C3 --> C3a[Pod 管理]
+    C3 --> C3b[Service 暴露]
+    C3 --> C3c[Deployment 部署]
+    C3 --> C3d[Helm 包管理]
+    
+    %% AWS 细分
+    C4 --> C4a[EC2 实例]
+    C4 --> C4b[S3 存储]
+    C4 --> C4c[VPC 网络]
+    C4 --> C4d[IAM 权限]
+    
+    %% 网络细分
+    C5 --> C5a[TCP/IP 协议]
+    C5 --> C5b[DNS 解析]
+    C5 --> C5c[负载均衡]
+    C5 --> C5d[防火墙配置]
+    
+    %% 安全细分
+    C6 --> C6a[SSH 密钥管理]
+    C6 --> C6b[SSL/TLS 证书]
+    C6 --> C6c[安全组配置]
+    C6 --> C6d[密钥管理服务]
+    
+    %% 前端细分
     D1 --> D1a[HTML/CSS]
     D1 --> D1b[JavaScript]
     D1 --> D1c[React/Vue]
     D1 --> D1d[TypeScript]
     
+    %% 后端细分
     D2 --> D2a[Node.js]
     D2 --> D2b[Python]
     D2 --> D2c[Go]
     D2 --> D2d[Java]
     
+    %% DevOps 细分
     D3 --> D3a[Linux]
     D3 --> D3b[Docker]
     D3 --> D3c[Kubernetes]
     D3 --> D3d[CI/CD]
     
+    %% AI/ML 细分
     D4 --> D4a[机器学习]
     D4 --> D4b[深度学习]
     D4 --> D4c[自然语言处理]
     D4 --> D4d[计算机视觉]
     
+    %% 移动开发细分
     D5 --> D5a[Android]
     D5 --> D5b[iOS]
     D5 --> D5c[Flutter]
     D5 --> D5d[React Native]
     
-    %% 动手实践分支
-    B -->|动手实践| E[🛠️ 04-K8s手动部署教程]
-    E --> E1[📋 环境准备]
+    %% K8s 部署细分
     E1 --> E1a[准备 Linux 服务器]
     E1 --> E1b[安装必要工具]
     E1 --> E1c[配置网络环境]
     
-    E --> E2[🔐 证书生成]
     E2 --> E2a[CA 证书]
     E2 --> E2b[API Server 证书]
     E2 --> E2c[Worker Node 证书]
     
-    E --> E3[📦 etcd 部署]
     E3 --> E3a[安装 etcd]
     E3 --> E3b[配置集群]
     E3 --> E3c[验证数据存储]
     
-    E --> E4[🎛️ 控制平面部署]
     E4 --> E4a[API Server]
     E4 --> E4b[Controller Manager]
     E4 --> E4c[Scheduler]
     
-    E --> E5[💻 Worker 节点部署]
     E5 --> E5a[kubelet]
     E5 --> E5b[kube-proxy]
     E5 --> E5c[容器运行时]
     
-    E --> E6[🧪 集群验证]
     E6 --> E6a[部署测试应用]
     E6 --> E6b[服务发现测试]
     E6 --> E6c[网络连通性测试]
     
-    %% 自动化运维分支
-    B -->|自动化运维| F[📜 03-DevOps脚本工具集]
-    F --> F1[☁️ 云平台脚本]
+    %% 云平台脚本细分
     F1 --> F1a[AWS 自动化]
     F1 --> F1b[GCP 自动化]
     F1 --> F1c[Azure 自动化]
     
-    F --> F2[🔄 CI/CD 脚本]
+    %% CI/CD 脚本细分
     F2 --> F2a[Jenkins 脚本]
     F2 --> F2b[GitHub Actions]
     F2 --> F2c[GitLab CI]
     
-    F --> F3[🐳 Docker 脚本]
+    %% Docker 脚本细分
     F3 --> F3a[镜像管理]
     F3 --> F3b[容器管理]
     F3 --> F3c[网络配置]
     
-    F --> F4[☸️ Kubernetes 脚本]
+    %% K8s 脚本细分
     F4 --> F4a[集群管理]
     F4 --> F4b[应用部署]
     F4 --> F4c[监控告警]
     
-    F --> F5[📊 监控脚本]
+    %% 监控脚本细分
     F5 --> F5a[Prometheus]
     F5 --> F5b[Grafana]
     F5 --> F5c[ELK Stack]
     
-    %% 进阶学习
+    %% ========== 第5层：汇聚层 ==========
     C1a --> G[📈 掌握基础知识]
     C2a --> G
     C3a --> G
@@ -231,106 +255,127 @@ graph TD
     F4a --> J
     F5a --> J
     
-    %% 中级水平
+    %% ========== 第6层：里程碑层 ==========
     G --> K([🏆 中级水平])
     H --> K
     I --> K
     J --> K
     
-    %% 高级学习路径
+    %% ========== 第7层：高级方向选择层 ==========
     K --> L{🔬 选择高级方向}
     
-    %% 监控与日志方向
+    %% ========== 第8层：高级方向层 ==========
     L -->|监控与日志| M[📊 监控体系]
+    L -->|CI/CD 流水线| N[🔄 持续集成/持续部署]
+    L -->|云原生技术| O[☁️ 云原生架构]
+    L -->|配置管理| P[⚙️ 自动化配置]
+    
+    %% ========== 第9层：高级项目层 ==========
+    %% 监控方向
     M --> M1[06-Prometheus监控方案]
+    M --> M2[07-Docker-ELK日志系统]
+    
+    %% CI/CD 方向
+    N --> N1[09-GitHub工作流模板]
+    N --> N2[05-Flux2-GitOps示例]
+    
+    %% 云原生方向
+    O --> O1[11-从零构建技术指南]
+    O --> O2[02-DevOps实战项目]
+    
+    %% 配置管理方向
+    P --> P1[08-Ansible自动化示例]
+    P --> P2[基础设施即代码]
+    
+    %% ========== 第10层：高级技术层 ==========
+    %% Prometheus 细分
     M1 --> M1a[指标采集]
     M1 --> M1b[告警规则]
     M1 --> M1c[Grafana 仪表盘]
     M1 --> M1d[Alertmanager 告警]
     
-    M --> M2[07-Docker-ELK日志系统]
+    %% ELK 细分
     M2 --> M2a[Elasticsearch 存储]
     M2 --> M2b[Logstash 处理]
     M2 --> M2c[Kibana 可视化]
     M2 --> M2d[Filebeat 采集]
     
-    M1a --> M3[监控指标设计]
-    M1b --> M3
-    M1c --> M3
-    M1d --> M3
-    M2a --> M4[日志分析平台]
-    M2b --> M4
-    M2c --> M4
-    M2d --> M4
-    
-    %% CI/CD 流水线方向
-    L -->|CI/CD 流水线| N[🔄 持续集成/持续部署]
-    N --> N1[09-GitHub工作流模板]
+    %% GitHub Actions 细分
     N1 --> N1a[CI 工作流]
     N1 --> N1b[CD 工作流]
     N1 --> N1c[安全扫描]
     N1 --> N1d[自动化测试]
     
-    N --> N2[05-Flux2-GitOps示例]
+    %% GitOps 细分
     N2 --> N2a[GitOps 原理]
     N2 --> N2b[Kustomize 配置]
     N2 --> N2c[Helm 发布]
     N2 --> N2d[Flux 控制器]
     
-    N1a --> N3[流水线设计]
-    N1b --> N3
-    N1c --> N3
-    N1d --> N3
-    N2a --> N4[GitOps 实践]
-    N2b --> N4
-    N2c --> N4
-    N2d --> N4
-    
-    %% 云原生技术方向
-    L -->|云原生技术| O[☁️ 云原生架构]
-    O --> O1[11-从零构建技术指南]
+    %% 构建指南细分
     O1 --> O1a[构建数据库]
     O1 --> O1b[构建 Web 服务器]
     O1 --> O1c[构建操作系统]
     O1 --> O1d[构建编译器]
     
-    O --> O2[02-DevOps实战项目]
+    %% 实战项目细分
     O2 --> O2a[微服务架构]
     O2 --> O2b[容器编排]
     O2 --> O2c[服务网格]
     O2 --> O2d[无服务器架构]
     
-    O1a --> O3[技术深度]
-    O1b --> O3
-    O1c --> O3
-    O1d --> O3
-    O2a --> O4[架构设计]
-    O2b --> O4
-    O2c --> O4
-    O2d --> O4
-    
-    %% 配置管理方向
-    L -->|配置管理| P[⚙️ 自动化配置]
-    P --> P1[08-Ansible自动化示例]
+    %% Ansible 细分
     P1 --> P1a[Playbook 编写]
     P1 --> P1b[Role 设计]
     P1 --> P1c[Inventory 管理]
     P1 --> P1d[变量与模板]
     
-    P --> P2[基础设施即代码]
+    %% IaC 细分
     P2 --> P2a[Terraform]
     P2 --> P2b[Pulumi]
     P2 --> P2c[CloudFormation]
+    
+    %% ========== 第11层：高级汇聚层 ==========
+    M1a --> M3[监控指标设计]
+    M1b --> M3
+    M1c --> M3
+    M1d --> M3
+    
+    M2a --> M4[日志分析平台]
+    M2b --> M4
+    M2c --> M4
+    M2d --> M4
+    
+    N1a --> N3[流水线设计]
+    N1b --> N3
+    N1c --> N3
+    N1d --> N3
+    
+    N2a --> N4[GitOps 实践]
+    N2b --> N4
+    N2c --> N4
+    N2d --> N4
+    
+    O1a --> O3[技术深度]
+    O1b --> O3
+    O1c --> O3
+    O1d --> O3
+    
+    O2a --> O4[架构设计]
+    O2b --> O4
+    O2c --> O4
+    O2d --> O4
     
     P1a --> P3[配置管理]
     P1b --> P3
     P1c --> P3
     P1d --> P3
+    
     P2a --> P4[IaC 实践]
     P2b --> P4
     P2c --> P4
     
-    %% 高级水平
+    %% ========== 第12层：高级里程碑层 ==========
     M3 --> Q([🥇 高级水平])
     M4 --> Q
     N3 --> Q
@@ -340,27 +385,34 @@ graph TD
     P3 --> Q
     P4 --> Q
     
-    %% 专家水平
+    %% ========== 第13层：专家方向选择层 ==========
     Q --> R{🎖️ 选择专家方向}
     
+    %% ========== 第14层：专家方向层 ==========
     R -->|SRE| S[🔧 站点可靠性工程]
+    R -->|架构师| T[🏛️ 解决方案架构]
+    R -->|技术专家| U[💎 技术深度]
+    
+    %% ========== 第15层：专家技能层 ==========
+    %% SRE 细分
     S --> S1[故障排查]
     S --> S2[性能优化]
     S --> S3[容量规划]
     S --> S4[混沌工程]
     
-    R -->|架构师| T[🏛️ 解决方案架构]
+    %% 架构师细分
     T --> T1[系统设计]
     T --> T2[技术选型]
     T --> T3[成本优化]
     T --> T4[安全架构]
     
-    R -->|技术专家| U[💎 技术深度]
+    %% 技术专家细分
     U --> U1[内核优化]
     U --> U2[网络协议]
     U --> U3[存储系统]
     U --> U4[分布式系统]
     
+    %% ========== 第16层：最终成就层 ==========
     S1 --> V([👑 DevOps 专家])
     S2 --> V
     S3 --> V
@@ -374,19 +426,42 @@ graph TD
     U3 --> V
     U4 --> V
     
-    %% 样式定义 - 蓝色系
+    %% ========== 样式定义 - 蓝色系（学习内容） ==========
+    %% 第1层 - 起始
     style A fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    
+    %% 第2层 - 方向选择
     style B fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
     style C fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style D fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style E fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style F fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第3层 - 主题分类
     style C1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C6 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E6 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    
+    %% 第4层 - 具体技术
     style C1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -411,11 +486,6 @@ graph TD
     style C6b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C6c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style C6d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style D1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style D2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style D3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style D4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style D5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style D1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style D1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style D1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -436,12 +506,6 @@ graph TD
     style D5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style D5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style D5d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style E6 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style E1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style E1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style E1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -460,11 +524,6 @@ graph TD
     style E6a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style E6b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style E6c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style F1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style F2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style F3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style F4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style F5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style F1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style F1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style F1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -480,14 +539,33 @@ graph TD
     style F5a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style F5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style F5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    
+    %% 第5层 - 汇聚
     style G fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style H fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style I fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style J fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第7层 - 高级方向选择
     style L fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    
+    %% 第8层 - 高级方向
     style M fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第9层 - 高级项目
     style M1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style M2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第10层 - 高级技术
     style M1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style M1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style M1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -496,11 +574,6 @@ graph TD
     style M2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style M2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style M2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style M3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style M4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style N fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style N1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style N2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style N1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style N1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style N1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -509,11 +582,6 @@ graph TD
     style N2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style N2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style N2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style N3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style N4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style O fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style O1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style O2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style O1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style O1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style O1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -522,11 +590,6 @@ graph TD
     style O2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style O2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style O2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
-    style O3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style O4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style P fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style P1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-    style P2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style P1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style P1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style P1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -534,12 +597,26 @@ graph TD
     style P2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style P2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style P2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    
+    %% 第11层 - 高级汇聚
+    style M3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style M4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style P3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style P4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第13层 - 专家方向选择
     style R fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    
+    %% 第14层 - 专家方向
     style S fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style T fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
     style U fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    
+    %% 第15层 - 专家技能
     style S1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style S2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style S3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
@@ -553,9 +630,14 @@ graph TD
     style U3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     style U4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
     
-    %% 样式定义 - 绿色系
+    %% ========== 样式定义 - 绿色系（里程碑成就） ==========
+    %% 第6层 - 中级里程碑
     style K fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    
+    %% 第12层 - 高级里程碑
     style Q fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    
+    %% 第16层 - 最终成就
     style V fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
 ```
 
