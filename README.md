@@ -70,6 +70,85 @@ cd DevOps-Learning-Hub
 2. 学习 [05-Flux2-GitOps示例](./05-Flux2-GitOps示例/) 中的 GitOps 实践
 3. 部署 [06-Prometheus监控方案](./06-Prometheus监控方案/) 和 [07-Docker-ELK日志系统](./07-Docker-ELK日志系统/)
 
+## 📊 学习流程图
+
+```mermaid
+graph TD
+    A[开始学习] --> B{选择学习方向}
+    
+    B --> C[面试准备]
+    B --> D[技能提升]
+    B --> E[动手实践]
+    B --> F[自动化运维]
+    
+    C --> C1[01-DevOps练习题库]
+    C1 --> C2[基础题目]
+    C1 --> C3[进阶题目]
+    C1 --> C4[模拟面试]
+    
+    D --> D1[10-开发者学习路线图]
+    D1 --> D2[前端开发]
+    D1 --> D3[后端开发]
+    D1 --> D4[DevOps]
+    D1 --> D5[AI/ML]
+    
+    E --> E1[04-K8s手动部署教程]
+    E1 --> E2[理解K8s架构]
+    E2 --> E3[02-DevOps实战项目]
+    E3 --> E4[完成实战项目]
+    
+    F --> F1[03-DevOps脚本工具集]
+    F1 --> F2[学习自动化脚本]
+    F2 --> F3[08-Ansible自动化示例]
+    F3 --> F4[配置管理自动化]
+    
+    C2 --> G[掌握基础]
+    C3 --> G
+    C4 --> G
+    
+    D2 --> H[选择技术栈]
+    D3 --> H
+    D4 --> H
+    D5 --> H
+    
+    E2 --> I[理解原理]
+    E4 --> I
+    
+    F2 --> J[提升效率]
+    F4 --> J
+    
+    G --> K[中级水平]
+    H --> K
+    I --> K
+    J --> K
+    
+    K --> L{继续深入}
+    
+    L --> M[监控与日志]
+    L --> N[CI/CD流水线]
+    L --> O[云原生技术]
+    
+    M --> M1[06-Prometheus监控方案]
+    M1 --> M2[07-Docker-ELK日志系统]
+    
+    N --> N1[09-GitHub工作流模板]
+    N1 --> N2[05-Flux2-GitOps示例]
+    
+    O --> O1[11-从零构建技术指南]
+    O1 --> O2[深入理解技术原理]
+    
+    M2 --> P[高级水平]
+    N2 --> P
+    O2 --> P
+    
+    P --> Q[成为DevOps专家]
+    
+    style A fill:#e1f5fe
+    style Q fill:#c8e6c9
+    style K fill:#fff3e0
+    style P fill:#f3e5f5
+```
+
 ## 🔧 技术栈
 
 - **容器化**: Docker, Kubernetes
