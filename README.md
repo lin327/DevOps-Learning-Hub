@@ -374,14 +374,189 @@ graph TD
     U3 --> V
     U4 --> V
     
-    %% 样式定义
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px
-    style B fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style K fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px
-    style Q fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
-    style V fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px
-    style L fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
-    style R fill:#fff8e1,stroke:#f57f17,stroke-width:2px
+    %% 样式定义 - 蓝色系
+    style A fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    style B fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    style C fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style D fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style E fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style F fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style C1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C6 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C3a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C3b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C3c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C3d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C4a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C4b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C4c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C4d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C5a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C5d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C6a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C6b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C6c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C6d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D3d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D4d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style D5d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E6 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E3a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E3b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E3c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E4a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E4b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E4c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E5a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E6a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E6b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style E6c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F5 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F3a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F3b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F3c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F4a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F4b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F4c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F5a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F5b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style F5c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style G fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style H fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style I fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style J fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style L fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    style M fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style M1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style M2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style M1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style M3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style M4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style N3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style N4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O2d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style O3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style O4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P1 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P2 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P1a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P1b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P1c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P1d fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P2a fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P2b fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P2c fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style P3 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style P4 fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style R fill:#bbdefb,stroke:#1565c0,stroke-width:3px,color:#0d47a1
+    style S fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style T fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style U fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+    style S1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style S2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style S3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style S4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style T1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style T2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style T3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style T4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style U1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style U2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style U3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style U4 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    
+    %% 样式定义 - 绿色系
+    style K fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    style Q fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    style V fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
 ```
 
 ### 📋 学习阶段详解
@@ -416,10 +591,22 @@ graph LR
     B4 --> C1
     C4 --> D1
     
-    style A1 fill:#e8f5e8
-    style B1 fill:#e3f2fd
-    style C1 fill:#fce4ec
-    style D1 fill:#fff3e0
+    style A1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A4 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    style B1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B4 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    style C1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C4 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+    style D1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D4 fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
 ```
 
 ### 🛠️ 技术栈学习路径
@@ -465,12 +652,30 @@ graph TD
     D4 --> F
     E4 --> F
     
-    style A1 fill:#e3f2fd
-    style B1 fill:#e8f5e8
-    style C1 fill:#fce4ec
-    style D1 fill:#fff3e0
-    style E1 fill:#f3e5f5
-    style F fill:#c8e6c9
+    style A1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style A5 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style B5 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style C5 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style D4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style E1 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style E2 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style E3 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style E4 fill:#e3f2fd,stroke:#1976d2,stroke-width:2px,color:#0d47a1
+    style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
 ```
 
 ### 🎯 学习时间规划
@@ -529,10 +734,22 @@ graph LR
     D --> D2[做分享]
     D --> D3[帮他人]
     
-    style A fill:#e1f5fe
-    style B fill:#e8f5e8
-    style C fill:#fff3e0
-    style D fill:#f3e5f5
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#0d47a1
+    style B fill:#e3f2fd,stroke:#1976d2,stroke-width:3px,color:#0d47a1
+    style C fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    style D fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
+    style A1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style A2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style A3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style B1 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style B2 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style B3 fill:#e3f2fd,stroke:#1976d2,stroke-width:1px,color:#0d47a1
+    style C1 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+    style C2 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+    style C3 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+    style D1 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+    style D2 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
+    style D3 fill:#c8e6c9,stroke:#2e7d32,stroke-width:1px,color:#1b5e20
 ```
 
 ## 🔧 技术栈
