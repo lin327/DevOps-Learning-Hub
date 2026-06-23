@@ -760,37 +760,6 @@ graph TD
     style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px,color:#1b5e20
 ```
 
-### 🎯 学习时间规划
-
-```mermaid
-gantt
-    title DevOps 学习时间规划
-    dateFormat  YYYY-MM-DD
-    section 基础阶段
-    Linux 基础           :done, des1, 2024-01-01, 30d
-    Docker 入门          :done, des2, after des1, 20d
-    K8s 基础             :done, des3, after des2, 30d
-    基础练习题           :done, des4, after des3, 20d
-    
-    section 中级阶段
-    自动化脚本           :active, des5, after des4, 30d
-    CI/CD 流水线         :des6, after des5, 30d
-    监控告警             :des7, after des6, 30d
-    配置管理             :des8, after des7, 30d
-    
-    section 高级阶段
-    架构设计             :des9, after des8, 40d
-    性能优化             :des10, after des9, 30d
-    安全加固             :des11, after des10, 30d
-    故障排查             :des12, after des11, 30d
-    
-    section 专家阶段
-    SRE 实践             :des13, after des12, 60d
-    技术领导             :des14, after des13, 60d
-    架构决策             :des15, after des14, 60d
-    技术布道             :des16, after des15, 60d
-```
-
 ### 🔄 学习循环
 
 ```mermaid
